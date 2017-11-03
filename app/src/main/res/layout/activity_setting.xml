@@ -59,7 +59,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg1"
+                    android:id="@+id/harga_1"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -90,7 +90,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg2"
+                    android:id="@+id/harga_2"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -124,7 +124,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg3"
+                    android:id="@+id/harga_3"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -157,7 +157,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg4"
+                    android:id="@+id/harga_4"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -190,7 +190,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg5"
+                    android:id="@+id/harga_5"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -223,7 +223,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg6"
+                    android:id="@+id/harga_6"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -256,7 +256,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/hrg7"
+                    android:id="@+id/harga_7"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
