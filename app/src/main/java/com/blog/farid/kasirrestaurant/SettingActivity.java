@@ -15,17 +15,17 @@ import android.widget.Toast;
 
 public class SettingActivity extends AppCompatActivity {
 
-    EditText ed1,ed2,ed3,ed4,ed5,ed6,ed7;
+    EditText et1,et2,et3,et4,et5,et6,et7;
     Button b1;
 
-    public static final String MyPREFERENCES = "MyPrefs";
-    public static final String food1 = "food1";
-    public static final String food2 = "food2";
-    public static final String food3 = "food3";
-    public static final String food4 = "food4";
-    public static final String food5 = "food5";
-    public static final String food6 = "food6";
-    public static final String food7 = "food7";
+    public static final String MyPREFERENCES = "MyPreferences";
+    public static final String masakan1 = "masakan1";
+    public static final String masakan2 = "masakan2";
+    public static final String masakan3 = "masakan3";
+    public static final String masakan4 = "masakan4";
+    public static final String masakan5 = "masakan5";
+    public static final String masakan6 = "masakan6";
+    public static final String masakan7 = "masakan7";
 
     SharedPreferences sharedpreferences;
     @Override
@@ -33,13 +33,13 @@ public class SettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        ed1= (EditText) findViewById(R.id.hrg1);
-        ed2= (EditText) findViewById(R.id.hrg2);
-        ed3= (EditText) findViewById(R.id.hrg3);
-        ed4= (EditText) findViewById(R.id.hrg4);
-        ed5= (EditText) findViewById(R.id.hrg5);
-        ed6= (EditText) findViewById(R.id.hrg6);
-        ed7= (EditText) findViewById(R.id.hrg7);
+        et1= (EditText) findViewById(R.id.harga_1);
+        et2= (EditText) findViewById(R.id.harga_2);
+        et3= (EditText) findViewById(R.id.harga_3);
+        et4= (EditText) findViewById(R.id.harga_4);
+        et5= (EditText) findViewById(R.id.harga_5);
+        et6= (EditText) findViewById(R.id.harga_6);
+        et7= (EditText) findViewById(R.id.harga_7);
 
         b1= (Button) findViewById(R.id.simpanButton);
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
@@ -49,23 +49,23 @@ public class SettingActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String f1 = ed1.getText().toString();
-                String f2 = ed2.getText().toString();
-                String f3 = ed3.getText().toString();
-                String f4 = ed4.getText().toString();
-                String f5 = ed5.getText().toString();
-                String f6 = ed6.getText().toString();
-                String f7 = ed7.getText().toString();
+                String f1 = et1.getText().toString();
+                String f2 = et2.getText().toString();
+                String f3 = et3.getText().toString();
+                String f4 = et4.getText().toString();
+                String f5 = et5.getText().toString();
+                String f6 = et6.getText().toString();
+                String f7 = et7.getText().toString();
 
                 SharedPreferences.Editor editor = sharedpreferences.edit();
 
-                editor.putString(food1,f1);
-                editor.putString(food2,f2);
-                editor.putString(food3,f3);
-                editor.putString(food4,f4);
-                editor.putString(food5,f5);
-                editor.putString(food6,f6);
-                editor.putString(food7,f7);
+                editor.putString(masakan1,f1);
+                editor.putString(masakan2,f2);
+                editor.putString(masakan3,f3);
+                editor.putString(masakan4,f4);
+                editor.putString(masakan5,f5);
+                editor.putString(masakan6,f6);
+                editor.putString(masakan7,f7);
                 editor.commit();
                 Toast.makeText(SettingActivity.this, "Saved!", Toast.LENGTH_SHORT).show();
 
@@ -76,12 +76,12 @@ public class SettingActivity extends AppCompatActivity {
     }
 
     void DisplayText(){
-        ed1.setText(sharedpreferences.getString(food1,food1));
-        ed2.setText(sharedpreferences.getString(food2,food2));
-        ed3.setText(sharedpreferences.getString(food3,food3));
-        ed4.setText(sharedpreferences.getString(food4,food4));
-        ed5.setText(sharedpreferences.getString(food5,food5));
-        ed6.setText(sharedpreferences.getString(food6,food6));
-        ed7.setText(sharedpreferences.getString(food7,food7));
+        et1.setText(sharedpreferences.getString(masakan1,masakan1));
+        et2.setText(sharedpreferences.getString(masakan2,masakan2));
+        et3.setText(sharedpreferences.getString(masakan3,masakan3));
+        et4.setText(sharedpreferences.getString(masakan4,masakan4));
+        et5.setText(sharedpreferences.getString(masakan5,masakan5));
+        et6.setText(sharedpreferences.getString(masakan6,masakan6));
+        et7.setText(sharedpreferences.getString(masakan7,masakan7));
     }
 }
