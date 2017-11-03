@@ -14,19 +14,19 @@ import android.widget.TextView;
 public class PayActivity extends AppCompatActivity {
 
 
-    int tot1,tot2,tot3,tot4,tot5,tot6,tot7,totTot;
-    String tots1,tots2,tots3,tots4,tots5,tots6,tots7,totsTots;
-    String jml1,jml2,jml3,jml4,jml5,jml6,jml7;
-    TextView total1,total2,total3,total4,total5,total6,total7,totalTot;
+    int totals1,totals2,totals3,totals4,totals5,totals6,totals7,totalsTot;
+    String totals_1,totals_2,totals_3,totals_4,totals_5,totals_6,totals_7,totals_Tots;
+    String jml_1,jml_2,jml_3,jml_4,jml_5,jml_6,jml_7;
+    TextView tempat1,tempat2,tempat3,tempat4,tempat5,tempat6,tempat7,tempatTot;
     SharedPreferences sharedpreferences;
     public static final String MyPREFERENCES = "MyPrefs";
-    public static final String food1 = "food1";
-    public static final String food2 = "food2";
-    public static final String food3 = "food3";
-    public static final String food4 = "food4";
-    public static final String food5 = "food5";
-    public static final String food6 = "food6";
-    public static final String food7 = "food7";
+    public static final String masakan1 = "masakan1";
+    public static final String masakan2 = "masakan2";
+    public static final String masakan3 = "masakan3";
+    public static final String masakan4 = "masakan4";
+    public static final String masakan5 = "masakan5";
+    public static final String masakan6 = "masakan6";
+    public static final String masakan7 = "masakan7";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,49 +35,49 @@ public class PayActivity extends AppCompatActivity {
         Intent gin = getIntent();
         Bundle b = gin.getExtras();
         if(b!=null){
-            jml1= (String) b.get("jumlah1");
-            jml2= (String) b.get("jumlah2");
-            jml3= (String) b.get("jumlah3");
-            jml4= (String) b.get("jumlah4");
-            jml5= (String) b.get("jumlah5");
-            jml6= (String) b.get("jumlah6");
-            jml7= (String) b.get("jumlah7");
+            jml_1= (String) b.get("jumlah1");
+            jml_2= (String) b.get("jumlah2");
+            jml_3= (String) b.get("jumlah3");
+            jml_4= (String) b.get("jumlah4");
+            jml_5= (String) b.get("jumlah5");
+            jml_6= (String) b.get("jumlah6");
+            jml_7= (String) b.get("jumlah7");
         }
 
-        total1= (TextView) findViewById(R.id.total1);
-        total2= (TextView) findViewById(R.id.total2);
-        total3= (TextView) findViewById(R.id.total3);
-        total4= (TextView) findViewById(R.id.total4);
-        total5= (TextView) findViewById(R.id.total5);
-        total6= (TextView) findViewById(R.id.total6);
-        total7= (TextView) findViewById(R.id.total7);
-        totalTot= (TextView) findViewById(R.id.totalTotal);
+        tempat1= (TextView) findViewById(R.id.struck1);
+        tempat2= (TextView) findViewById(R.id.struck2);
+        tempat3= (TextView) findViewById(R.id.struck3);
+        tempat4= (TextView) findViewById(R.id.struck4);
+        tempat5= (TextView) findViewById(R.id.struck5);
+        tempat6= (TextView) findViewById(R.id.struck6);
+        tempat7= (TextView) findViewById(R.id.struck7);
+        tempatTot= (TextView) findViewById(R.id.totalTotal);
 
-        tot1= Integer.parseInt(jml1) * Integer.parseInt(sharedpreferences.getString(food1,food1));
-        tot2= Integer.parseInt(jml2) * Integer.parseInt(sharedpreferences.getString(food2,food2));
-        tot3= Integer.parseInt(jml3) * Integer.parseInt(sharedpreferences.getString(food3,food3));
-        tot4= Integer.parseInt(jml4) * Integer.parseInt(sharedpreferences.getString(food4,food4));
-        tot5= Integer.parseInt(jml5) * Integer.parseInt(sharedpreferences.getString(food5,food5));
-        tot6= Integer.parseInt(jml6) * Integer.parseInt(sharedpreferences.getString(food6,food6));
-        tot7= Integer.parseInt(jml7) * Integer.parseInt(sharedpreferences.getString(food7,food7));
-        totTot=tot1+tot2+tot3+tot4+tot5+tot6+tot7;
-        tots1= String.valueOf(Integer.parseInt(jml1) * Integer.parseInt(sharedpreferences.getString(food1,food1)));
-        tots2= String.valueOf(Integer.parseInt(jml2) * Integer.parseInt(sharedpreferences.getString(food2,food2)));
-        tots3= String.valueOf(Integer.parseInt(jml3) * Integer.parseInt(sharedpreferences.getString(food3,food3)));
-        tots4= String.valueOf(Integer.parseInt(jml4) * Integer.parseInt(sharedpreferences.getString(food4,food4)));
-        tots5= String.valueOf(Integer.parseInt(jml5) * Integer.parseInt(sharedpreferences.getString(food5,food5)));
-        tots6= String.valueOf(Integer.parseInt(jml6) * Integer.parseInt(sharedpreferences.getString(food6,food6)));
-        tots7= String.valueOf(Integer.parseInt(jml7) * Integer.parseInt(sharedpreferences.getString(food7,food7)));
-        totsTots= String.valueOf(totTot);
+        totals1= Integer.parseInt(jml_1) * Integer.parseInt(sharedpreferences.getString(masakan1,masakan1));
+        totals2= Integer.parseInt(jml_2) * Integer.parseInt(sharedpreferences.getString(masakan2,masakan2));
+        totals3= Integer.parseInt(jml_3) * Integer.parseInt(sharedpreferences.getString(masakan3,masakan3));
+        totals4= Integer.parseInt(jml_4) * Integer.parseInt(sharedpreferences.getString(masakan4,masakan4));
+        totals5= Integer.parseInt(jml_5) * Integer.parseInt(sharedpreferences.getString(masakan5,masakan5));
+        totals6= Integer.parseInt(jml_6) * Integer.parseInt(sharedpreferences.getString(masakan6,masakan6));
+        totals7= Integer.parseInt(jml_7) * Integer.parseInt(sharedpreferences.getString(masakan7,masakan7));
+        totalsTot=totals1+totals2+totals3+totals4+totals5+totals6+totals7;
+        totals_1= String.valueOf(Integer.parseInt(jml_1) * Integer.parseInt(sharedpreferences.getString(masakan1,masakan1)));
+        totals_2= String.valueOf(Integer.parseInt(jml_2) * Integer.parseInt(sharedpreferences.getString(masakan2,masakan2)));
+        totals_3= String.valueOf(Integer.parseInt(jml_3) * Integer.parseInt(sharedpreferences.getString(masakan3,masakan3)));
+        totals_4= String.valueOf(Integer.parseInt(jml_4) * Integer.parseInt(sharedpreferences.getString(masakan4,masakan4)));
+        totals_5= String.valueOf(Integer.parseInt(jml_5) * Integer.parseInt(sharedpreferences.getString(masakan5,masakan5)));
+        totals_6= String.valueOf(Integer.parseInt(jml_6) * Integer.parseInt(sharedpreferences.getString(masakan6,masakan6)));
+        totals_7= String.valueOf(Integer.parseInt(jml_7) * Integer.parseInt(sharedpreferences.getString(masakan7,masakan7)));
+        totals_Tots= String.valueOf(totalsTot);
 
-        total1.setText(tots1);
-        total2.setText(tots2);
-        total3.setText(tots3);
-        total4.setText(tots4);
-        total5.setText(tots5);
-        total6.setText(tots6);
-        total7.setText(tots7);
-        totalTot.setText(totsTots);
+        tempat1.setText(totals_1);
+        tempat2.setText(totals_2);
+        tempat3.setText(totals_3);
+        tempat4.setText(totals_4);
+        tempat5.setText(totals_5);
+        tempat6.setText(totals_6);
+        tempat7.setText(totals_7);
+        tempatTot.setText(totals_Tots);
 
     }
 }
