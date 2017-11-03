@@ -9,21 +9,21 @@
     tools:layout_editor_absoluteX="0dp">
 
     <TextView
+        android:id="@+id/txtMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Daftar Menu"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:id="@+id/txtMenu"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/pesanButton"
@@ -80,7 +80,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml1"
+                    android:id="@+id/jumlahpesanan1"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -112,7 +112,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml2"
+                    android:id="@+id/jumlahpesanan2"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -147,7 +147,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml3"
+                    android:id="@+id/jumlahpesanan3"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -181,7 +181,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml4"
+                    android:id="@+id/jumlahpesanan4"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -215,7 +215,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml5"
+                    android:id="@+id/jumlahpesanan5"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -249,7 +249,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml6"
+                    android:id="@+id/jumlahpesanan6"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
@@ -283,7 +283,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/jml7"
+                    android:id="@+id/jumlahpesanan7"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="25dp"
