@@ -14,25 +14,25 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    String jumlah1;
-    String jumlah2;
-    String jumlah3;
-    String jumlah4;
-    String jumlah5;
-    String jumlah6;
-    String jumlah7;
-    TextView jml1,jml2,jml3,jml4,jml5,jml6,jml7;
+    String pesanan1;
+    String pesanan2;
+    String pesanan3;
+    String pesanan4;
+    String pesanan5;
+    String pesanan6;
+    String pesanan7;
+    TextView jumlah1,jumlah2,jumlah3,jumlah4,jumlah5,jumlah6,jumlah7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        jml1= (TextView) findViewById(R.id.jml1);
-        jml2= (TextView) findViewById(R.id.jml2);
-        jml3= (TextView) findViewById(R.id.jml3);
-        jml4= (TextView) findViewById(R.id.jml4);
-        jml5= (TextView) findViewById(R.id.jml5);
-        jml6= (TextView) findViewById(R.id.jml6);
-        jml7= (TextView) findViewById(R.id.jml7);
+        jumlah1= (TextView) findViewById(R.id.jumlahpesanan1);
+        jumlah2= (TextView) findViewById(R.id.jumlahpesanan2);
+        jumlah3= (TextView) findViewById(R.id.jumlahpesanan3);
+        jumlah4= (TextView) findViewById(R.id.jumlahpesanan4);
+        jumlah5= (TextView) findViewById(R.id.jumlahpesanan5);
+        jumlah6= (TextView) findViewById(R.id.jumlahpesanan6);
+        jumlah7= (TextView) findViewById(R.id.jumlahpesanan7);
     }
 
     @Override
@@ -53,20 +53,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void doPesan(View view) {
         Intent it = new Intent(this, PayActivity.class);
-        jumlah1=jml1.getText().toString();
-        jumlah2=jml2.getText().toString();
-        jumlah3=jml3.getText().toString();
-        jumlah4=jml4.getText().toString();
-        jumlah5=jml5.getText().toString();
-        jumlah6=jml6.getText().toString();
-        jumlah7=jml7.getText().toString();
-        it.putExtra("jumlah1",jumlah1);
-        it.putExtra("jumlah2",jumlah2);
-        it.putExtra("jumlah3",jumlah3);
-        it.putExtra("jumlah4",jumlah4);
-        it.putExtra("jumlah5",jumlah5);
-        it.putExtra("jumlah6",jumlah6);
-        it.putExtra("jumlah7",jumlah7);
+        pesanan1=jumlah1.getText().toString();
+        pesanan2=jumlah2.getText().toString();
+        pesanan3=jumlah3.getText().toString();
+        pesanan4=jumlah4.getText().toString();
+        pesanan5=jumlah5.getText().toString();
+        pesanan6=jumlah6.getText().toString();
+        pesanan7=jumlah7.getText().toString();
+        it.putExtra("jumlah1",pesanan1);
+        it.putExtra("jumlah2",pesanan2);
+        it.putExtra("jumlah3",pesanan3);
+        it.putExtra("jumlah4",pesanan4);
+        it.putExtra("jumlah5",pesanan5);
+        it.putExtra("jumlah6",pesanan6);
+        it.putExtra("jumlah7",pesanan7);
         startActivity(it);
 
     }
